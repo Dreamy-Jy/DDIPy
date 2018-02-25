@@ -1,5 +1,24 @@
 #include <Wire.h>
+#include <PID_v1.h>
+#include <LMotorController.h>
+//DIP and Motor Setups
+#define MIN_ABS_SPEED 20
+double Setpoint, Input, Output;
+int ENA = 3;
+int IN1 = 4;
+int IN2 = 8;
+int IN3 = 5;
+int IN4  = 7;
+int ENB = 6;
 
+
+LMotorController motorController(ENA, IN1, IN2, ENB, IN3, IN4,1,1);
+
+
+double Kp=2, Ki=5, Kd=1;
+PID myPID(&Input, &Output, &Setpoint, Kp, Ki, Kd, DIRECT);
+double motorSpeedFactorLeft = 0.6;
+double motorSpeedFactorRight = 0.5;
 int gyro_x, gyro_y, gyro_z;
 long acc_x, acc_y, acc_z, acc_total_vector;
 int temperature;
@@ -13,6 +32,9 @@ float angle_roll_acc, angle_pitch_acc;
 float angle_pitch_output, angle_roll_output;
 
 void setup() {
+ Input = 0;
+ Setpoint = 0;
+ myPID.SetMode(AUTOMATIC);
   Wire.begin();                                                       //Start I2C as master
 
   Serial.begin(9600);                                               //Use only for debugging
@@ -37,7 +59,9 @@ void setup() {
 }
 
 void loop() {
-  getAngle();
+  myPID.Compute();
+  motorController.move(Output, MIN_ABS_SPEED);
+  Input = getAngle();
   // put your main code here, to run repeatedly:
   Serial.println(angle_pitch*10);
 }
