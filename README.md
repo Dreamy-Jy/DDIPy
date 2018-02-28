@@ -1,8 +1,9 @@
-# DDIPy
+# DDIPy (:sparkles:[Best Beginner Hack](https://devpost.com/software/ddipy) @ [MakeCU 2018](https://www.makecu.org/):sparkles:)
 
-This is DDIP.
-
+This is DDIP the Differentially Driven Inverted Pendulum. DDIPy is remote controled Self balancing robot design and implemented for The MakeCU Hackathon. DDIPy is very musch so still in development (User Battery Pack melted at MakeCU :cry:), and Currently does **NOT** have a completed Readme.
 # Purpose
+
+As software focus computer science students we created DDIPy to exsplore Hardware development and Robotics.
 
 # How to Download
 
@@ -27,6 +28,7 @@ Down the line this lead to issues as the Gyro used I<sup>2</sup>C communication,
 * though we knew the physics of the we didn't know how to implment
 
 # Attribution
+
 https://github.com/yohendry/arduino_L298N - the L298N Fritzing part we used in the robot schematic.
 
 This is the chasse we bought for the robot:
