@@ -1,19 +1,19 @@
 # DDIPy (:sparkles:[Best Beginner Hack](https://devpost.com/software/ddipy) @ [MakeCU 2018](https://www.makecu.org/):sparkles:)
 
 This is DDIPy the Differentially Driven Inverted Pendulum. DDIPy is remote controled Self balancing robot design and implemented for The MakeCU Hackathon. DDIPy is very musch so still in development (User Battery Pack melted at MakeCU :cry:), and Currently does **NOT** have a completed Readme.
-# Purpose
+## Purpose
 
 As software focus computer science students we created DDIPy to exsplore Hardware development and Robotics.
 
-# How to Download
+## How to Download
 
-# Getting Started
+## Getting Started
 
 > Word of advice please test how your motors are set-up.
 > We're not sure how our motors are set up we just tested by
 > experiment.
 
-# Problems Faced
+## Problems Faced
 
 1. We had researched the basics components of the Robots, had conceptualized the build process, and even had previous experience using some of the modules, but we didn't test all the modules we would be using ahead of time.
 
@@ -27,7 +27,7 @@ Down the line this lead to issues as the Gyro used I<sup>2</sup>C communication,
 4. Once we got the gyroscope values we didn't realize that the gyroscope was outputting the instantaneous angular velocity not the angle of the system at a given time.
 * though we knew the physics of the we didn't know how to implment
 
-# Attribution
+## Attribution
 
 https://github.com/yohendry/arduino_L298N - the L298N Fritzing part we used in the robot schematic.
 
@@ -35,3 +35,13 @@ This is the chasse we bought for the robot:
 https://www.osepp.com/robotic-kits/6-2wheeler
 Motor Datasheet
 https://www.osepp.com/downloads/pdf/DC-Motor-Spec.pdf
+
+## Special Thanks
+
+Stacie Nunes, Ph.D 
+
+AC<sup>2</sup> program - 
+
+Odest Chadwicke Jenkins, Ph.D - for giving us the project.
+
+SUNY New Paltz - for funding 
