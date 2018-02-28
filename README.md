@@ -1,6 +1,6 @@
 # DDIPy (:sparkles:[Best Beginner Hack](https://devpost.com/software/ddipy) @ [MakeCU 2018](https://www.makecu.org/):sparkles:)
 
-This is DDIP the Differentially Driven Inverted Pendulum. DDIPy is remote controled Self balancing robot design and implemented for The MakeCU Hackathon. DDIPy is very musch so still in development (User Battery Pack melted at MakeCU :cry:), and Currently does **NOT** have a completed Readme.
+This is DDIPy the Differentially Driven Inverted Pendulum. DDIPy is remote controled Self balancing robot design and implemented for The MakeCU Hackathon. DDIPy is very musch so still in development (User Battery Pack melted at MakeCU :cry:), and Currently does **NOT** have a completed Readme.
 # Purpose
 
 As software focus computer science students we created DDIPy to exsplore Hardware development and Robotics.
