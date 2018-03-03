@@ -2,14 +2,14 @@
 #include <PID_v1.h>
 #include <LMotorController.h>
 //DIP and Motor Setups
-#define MIN_ABS_SPEED 20
+#define MIN_ABS_SPEED 120;
 double Setpoint, Input, Output;
 int ENA = 3;
 int IN1 = 4;
 int IN2 = 8;
 int IN3 = 5;
 int IN4  = 7;
-int ENB = 6;
+int ENB = 4;
 
 
 LMotorController motorController(ENA, IN1, IN2, ENB, IN3, IN4,1,1);
@@ -32,7 +32,7 @@ float angle_roll_acc, angle_pitch_acc;
 float angle_pitch_output, angle_roll_output;
 
 void setup() {
- Input = 0;
+ Input = getAngle();
  Setpoint = 0;
  myPID.SetMode(AUTOMATIC);
   Wire.begin();                                                       //Start I2C as master
@@ -63,7 +63,7 @@ void loop() {
   motorController.move(Output, MIN_ABS_SPEED);
   Input = getAngle();
   // put your main code here, to run repeatedly:
-  Serial.println(angle_pitch*10);
+  Serial.println(Output);
 }
 
 float getAngle() {
