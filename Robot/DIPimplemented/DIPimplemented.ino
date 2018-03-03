@@ -10,6 +10,7 @@ int IN2 = 8;
 int IN3 = 5;
 int IN4  = 7;
 int ENB = 6;
+int W = 2;
 
 
 LMotorController motorController(ENA, IN1, IN2, ENB, IN3, IN4,1,1);
