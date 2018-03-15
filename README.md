@@ -41,8 +41,8 @@ https://www.osepp.com/downloads/pdf/DC-Motor-Spec.pdf
 
 Stacie Nunes, Ph.D 
 
-AC<sup>2</sup> program - 
+AC<sup>2</sup> program
 
-Odest Chadwicke Jenkins, Ph.D - for giving us the project.
+Odest Chadwicke Jenkins, Ph.D - for giving us the idea behind the project.
 
-SUNY New Paltz - for funding 
+SUNY New Paltz - for funding
